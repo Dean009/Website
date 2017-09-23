@@ -1,11 +1,17 @@
-html {
-    height: 100%;
-    width: 1080px;
-    box-sizing: border-box;
+/* the entire HTML document */
+.full_body {
+    width:100%;
+	margin: 0 auto;
 }
 
+body{
+	background-color:  #A9A9A9;
+}
+
+/* Dean Moore -- Header */
 .header {
-   position: fixed;
+   position: sticky;
+   position: -webkit-sticky;
    width: 500px;
    margin: auto;
    left: 0;
@@ -17,12 +23,50 @@ html {
 
 /* The footer at the bottom of the screen */
 .footer {   
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-  font-size: 10px;
+	position: fixed bottom;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    overflow: hidden;
+    background-color: #333;
+	font-size: 12px;	
+	color: white;
+	border: 1px solid black;
+    border-radius: 5px;
 }
+
+/* The nav bar */
+.topnav ul {
+	width: 100%;
+	text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	border: 1px solid black;
+    border-radius: 5px;
+}
+
+.topnav li {
+    float: center;
+	display: inline-block;
+}
+
+.topnav li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.topnav li a:hover {
+    background-color: #111;
+}
+
+
+
